@@ -11,56 +11,179 @@
     height: 100%;
 }
 
+/* LEFT SIDE */
 .presentation {
     width: 100%;
     height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/bg06.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 
 .banner {
-    background-color: black;
-    color: white;
-    margin-top: 10vh;
-    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    font-size: 2rem;
 }
 
+.logo {
+    height: 7vh;
+    width: auto;
+    margin-right: 1rem;
+    margin-left: -3rem;
+}
 
+/* RIGHT SIDE */
 .content {
     width: 100%;
 }
 
 .section {
     width: 100%;
-    height: 200px;
+}
+
+/* TEXT */
+.text {
+    height: fit-content;
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: 1.3;
+    font-size: 1;
+}
+
+.textContent > p {
+    margin: 0 1.2rem 1.2rem 1.2rem;
+    text-align: center;
+    max-width: 540px;
+}
+
+.textContent > p:first-child {
+    margin-top: 1rem;
+}
+
+/* FORM */
+.newacc {
+    height: fit-content;
+}
+
+form {
+    padding: 2rem;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.formItem:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+input {
+    width: 70%;
+    max-width: 350px;
+    font-size: 1.25rem;
+    padding: 3px;
+}
+
+input:focus {
+    box-shadow: 0px 10px 20px -5px #000000;
+    border-radius: none;
+}
+
+input:hover {
+    border: 2px solid rgb(133, 133, 133);
+    border-radius: 3px;
+}
+
+/* ACTION */
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.actionItem {
+    margin: 1rem 0 0 0;
 }
 
 
-.presentation{
+.createNewAcc {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+
+/* .presentation{
     background-color: rgb(255, 121, 226);
 }
 .text {
-    background-color: rgb(190, 121, 255);
+    background-color: rgb(119, 197, 233);
 }
 .newacc {
-    background-color: rgb(121, 255, 177);
+    background-color: rgb(255, 255, 255);
 }
-.login {
+.action {
     background-color: rgb(255, 193, 121);
-}
+} */
 
 @media only screen and (max-width: 700px) {
-    .page {
-        border: 5px solid red; /* Red */
-    }
+
 }
+
 @media only screen and (min-width: 701px) {
     .page {
-        border: 5px solid black; /* Red */
+        height: 100%;
+        font-size: 1.5rem;
     }
     .presentation {
         width: 35%;
-        height: 100%;
+        height: 100vh;
     }
     .content {
         width: 65%;
+    }
+    .banner {
+        height: 10%;
+        margin-top: -40vh;
+        font-size: 3rem;
+    }
+    .text {
+        height: 40%;
+    }
+    input {
+        width: 50%;
+    }
+    .textContent > p:first-child {
+        margin-top: min(17vw, 17vh);
+    }
+    .textContent > p {
+        max-width: 800px;
+    }
+    .createNewAcc {
+        font-size: 1.3rem;
+    }
+    .formItem {
+        font-size: 1rem;
     }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>TOP Sign-up form</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,15 +12,49 @@
 
         <div class="presentation">
             <div class="banner">
-                blabladisu
+                <img src="./images/logo.png" alt="sports logo" class="logo">
+                <p>T-Sports</p>
             </div>
         </div>
         <div class="content">
             <div class="section text">
+                <div class="textContent">
+                    <p>Training, recovery, nutrition and mindset are the basic
+                        pillars of high quality performance. We offer you our
+                        deep knowledge in each of those areas.
+                    </p>
+                    <p>
+                        Dont hesitate and improve your performance today!
+                    </p>
+                </div>
             </div>
             <div class="section newacc">
+                <form action="" method="" id="newAccForm">
+                    <div class="formItem">
+                        <label for="accName">Account name</label>
+                        <input type="text" class="accName" name="accName" id="accName">
+                    </div>
+                    <div class="formItem">
+                        <label for="email">E-mail adress</label>
+                        <input type="email" class="email" name="email" id="email">
+                    </div>
+                    <div class="formItem">
+                        <label for="password">Password</label>
+                        <input type="password" class="password" name="password" id="password">
+                    </div>
+                    <div class="formItem">
+                        <label for="confirmPassword">Confirm password</label>
+                        <input type="confirmPassword" class="pasconfirmPasswordsword" name="confirmPassword" id="confirmPassword">
+                    </div>
+                </form>
             </div>
-            <div class="section login">
+            <div class="section action">
+                <div class="actionItem">
+                    <button type="submit" form="newAccForm" value="createNewAcc" class="createNewAcc">Create Account</button>
+                </div>
+                <div class="actionItem">
+                    <p>Already have an account? <span class="login">Log In</span></p>
+                </div>
             </div>
         </div>
 
