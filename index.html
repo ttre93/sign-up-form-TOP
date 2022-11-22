@@ -32,19 +32,26 @@
                 <form action="" method="" id="newAccForm">
                     <div class="formItem">
                         <label for="accName">Account name</label>
-                        <input type="text" class="accName" name="accName" id="accName">
+                        <input type="text" class="accName" name="accName" id="accName" 
+                        required pattern="^[A-Za-z0-9_]{3,20}$" 
+                        title="Username can contain letters, numbers and underscores only, and must be 3-15 characters long.">
                     </div>
                     <div class="formItem">
                         <label for="email">E-mail adress</label>
-                        <input type="email" class="email" name="email" id="email">
+                        <input type="email" class="email" name="email" id="email" 
+                        required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                        title="Please enter a valid email adress.">
                     </div>
                     <div class="formItem">
                         <label for="password">Password</label>
-                        <input type="password" class="password" name="password" id="password">
+                        <input type="password" class="password" name="password" id="password"
+                        required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                        title="Password must contain uppercase, lowercase and number character.">
                     </div>
                     <div class="formItem">
                         <label for="confirmPassword">Confirm password</label>
-                        <input type="confirmPassword" class="pasconfirmPasswordsword" name="confirmPassword" id="confirmPassword">
+                        <input type="password" class="pasconfirmPasswordsword" name="confirmPassword" id="confirmPassword"
+                        required>
                     </div>
                 </form>
             </div>
