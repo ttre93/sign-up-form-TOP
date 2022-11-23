@@ -19,10 +19,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/bg06.jpg);
+    background-image: url(./images/bg01.jpg);
     background-size: cover;
     background-position: center center;
+    animation: change 20s infinite ease-in-out;
 }
+
+@keyframes change {
+    100%, 0%, 15% {background-image: url(./images/bg01.jpg);}
+    20%, 35% {background-image: url(./images/bg03.jpg);}
+    40%, 55% {background-image: url(./images/bg05.jpg);}
+    60%, 75% {background-image: url(./images/bg08.jpg);}
+    80%, 95% {background-image: url(./images/bg09.jpg);}
+}
+/* 
+@keyframes change{
+    0%, 10% {
+        background-image: url(./images/bg01.jpg);
+    }
+    11%, 21% {
+        background-image: url(./images/bg02.jpg);
+    }
+    22%, 32% {
+        background-image: url(./images/bg03.jpg);
+    }
+    33%, 43% {
+        background-image: url(./images/bg04.jpg);
+    }
+    44%, 54% {
+        background-image: url(./images/bg05.jpg);
+    }
+    55%, 65% {
+        background-image: url(./images/bg06.jpg);
+    }
+    66%, 76% {
+        background-image: url(./images/bg07.jpg);
+    }
+    77%, 87% {
+        background-image: url(./images/bg08.jpg);
+    }
+    88%, 98% {
+        background-image: url(./images/bg09.jpg);
+    }
+    100% {
+        background-image: url(./images/bg01.jpg);
+    }
+} */
 
 .banner {
     background-color: rgba(255, 255, 255, 0.5);
@@ -136,6 +178,8 @@ input:hover {
 
 .login {
     font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
 
 
