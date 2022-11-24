@@ -32,39 +32,6 @@
     60%, 75% {background-image: url(./images/bg08.jpg);}
     80%, 95% {background-image: url(./images/bg09.jpg);}
 }
-/* 
-@keyframes change{
-    0%, 10% {
-        background-image: url(./images/bg01.jpg);
-    }
-    11%, 21% {
-        background-image: url(./images/bg02.jpg);
-    }
-    22%, 32% {
-        background-image: url(./images/bg03.jpg);
-    }
-    33%, 43% {
-        background-image: url(./images/bg04.jpg);
-    }
-    44%, 54% {
-        background-image: url(./images/bg05.jpg);
-    }
-    55%, 65% {
-        background-image: url(./images/bg06.jpg);
-    }
-    66%, 76% {
-        background-image: url(./images/bg07.jpg);
-    }
-    77%, 87% {
-        background-image: url(./images/bg08.jpg);
-    }
-    88%, 98% {
-        background-image: url(./images/bg09.jpg);
-    }
-    100% {
-        background-image: url(./images/bg01.jpg);
-    }
-} */
 
 .banner {
     background-color: rgba(255, 255, 255, 0.5);
@@ -181,20 +148,6 @@ input:hover {
     text-decoration: none;
     color: black;
 }
-
-
-/* .presentation{
-    background-color: rgb(255, 121, 226);
-}
-.text {
-    background-color: rgb(119, 197, 233);
-}
-.newacc {
-    background-color: rgb(255, 255, 255);
-}
-.action {
-    background-color: rgb(255, 193, 121);
-} */
 
 @media only screen and (max-width: 700px) {
 
