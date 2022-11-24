@@ -19,18 +19,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/bg01.jpg);
+    background-image: url(./images/bg09.jpg);
     background-size: cover;
-    background-position: center center;
     animation: change 20s infinite ease-in-out;
 }
 
 @keyframes change {
-    100%, 0%, 15% {background-image: url(./images/bg01.jpg);}
-    20%, 35% {background-image: url(./images/bg03.jpg);}
-    40%, 55% {background-image: url(./images/bg05.jpg);}
-    60%, 75% {background-image: url(./images/bg08.jpg);}
-    80%, 95% {background-image: url(./images/bg09.jpg);}
+    100%, 0%, 15% { background-image: url(./images/bg01.jpg);
+                    background-position: center 70%;}
+    20%, 35% {      background-image: url(./images/bg03.jpg);
+                    background-position: center 47%;}
+    40%, 55% {      background-image: url(./images/bg05.jpg);
+                    background-position: center 37%;}
+    60%, 75% {      background-image: url(./images/bg08.jpg);
+                    background-position: center 50%;}
+    80%, 95% {      background-image: url(./images/bg09.jpg);
+                    background-position: center 55%;}
 }
 
 .banner {
